@@ -93,7 +93,7 @@ header{
   transition: .5s;
 }
 .nav .nav__mobile__list li a{
-  line-height: 80px;
+  line-height: 70px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
