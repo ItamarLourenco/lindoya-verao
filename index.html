@@ -15,6 +15,20 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/lindoya.js"></script>
+
+  <script>
+    window.onload = () => {
+      var navMobile = window.document.getElementById('nav__mobile');
+      var navMobileList = window.document.getElementById('nav__mobile__list');
+      navMobile.addEventListener('click', () => {
+        if(!navMobileList.classList.contains('nav__mobile__list__open')){
+          navMobileList.classList.add('nav__mobile__list__open')
+        }else{
+          navMobileList.classList.remove('nav__mobile__list__open')
+        }
+      })
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -36,9 +50,10 @@
         <a target="_blank" href="https://www.facebook.com/LindoyaVeraoOficial/"><img src="./assets/images/facebook.svg" /></a>
       </div>
 
-      <div class="nav__mobile" id="nav__mobile">
+      <a class="nav__mobile" id="nav__mobile">
         <img src="assets/images/menu-mobile.svg" />
-      </div>
+      </a>
+
       <ul class="nav__mobile__list" id="nav__mobile__list">
         <li><a href="http://lindoyaverao.com.br/" class="nav__menu__link">Verão</a></li>
         <li><a href="http://thermal.lindoyaverao.com.br/" class="nav__menu__link">Thermal</a></li>
@@ -99,11 +114,11 @@
   
   <footer class="footer">
     <div class="container">
-      <ul class="footer__links">
+      <!-- <ul class="footer__links">
         <li><a href="http://retornavel.lindoyaverao.com.br/">Garrafão retornável</a></li>
         <li><a href="http://catalogo.lindoyaverao.com.br/">Produtos Lindoya</a></li>
         <li><a href="http://sustentavel.lindoyaverao.com.br/">Sustentabilidade</a></li>
-      </ul>
+      </ul> -->
       <div class="footer__networks">
         <h4 class="footer__networks__title">Siga-nos</h4>
         <ul class="footer__networks__list">
